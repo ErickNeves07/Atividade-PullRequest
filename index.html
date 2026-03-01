@@ -41,12 +41,18 @@
         .btn:hover {
             background-color: #45a049;
         }
+        form{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Bem-vindo ao Projeto de Pull Request! <img src="peixeTripeNovo.webp" alt="" width="100px"></h1>  
+    <h1 >Bem-vindo ao Projeto de Pull Request! <h1 id="resultado"></h1><a href="https://en.wikipedia.org/wiki/Tripod_fish"><img src="peixeTripeNovo.jpg" alt="" style="cursor: pointer;" width="80px"></a></h1>  
 </header>
 
 <main>
@@ -64,7 +70,17 @@
         </ul>
     </section>
 
-    <button class="btn">Clique aqui para aprender mais!</button>
+    <a href="jun.html"><button class="btn">Clique aqui para aprender mais!</button></a>
+    
+    <form id="form">
+
+        <label>-Envie sua assinatura para a causa-</label><br>
+        <input type="text" name="nome" placeholder="Digite seu nome"><br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
 </main>
 
 <footer>
@@ -72,23 +88,7 @@
 </footer>
 
 
-<form action="processar" method="post">
 
-    <label>Nome:</label><br>
-    <input type="text" name="nome"><br><br>
-
-    <label>Email:</label><br>
-    <input type="email" name="email"><br><br>
-
-    <label>Senha:</label><br>
-    <input type="password" name="senha"><br><br>
-
-    <label>Idade:</label><br>
-    <input type="number" name="idade"><br><br>
-
-    <input type="submit" value="Enviar">
-
-</form>
 
 </body>
 </html>
